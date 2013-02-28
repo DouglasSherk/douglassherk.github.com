@@ -1,0 +1,57 @@
+<script>
+  var alreadySet = false;
+  function emailClick(link) {
+    if (alreadySet) {
+      return false;
+    }
+    alreadySet = true;
+    if (confirm("Please confirm that you are not a bot.")) {
+      $(link).attr("href", "mailto:" + "doug" + "@" + "sherk" + "." + "me");
+    } else {
+      return true;
+    }
+  }
+</script>
+
+<h2 style="margin-top: 0;">Hi, I'm Doug</h2>
+<p><img src="http://s.gravatar.com/avatar/d5256b1b26063b624fb829b898eb9615?s=80" alt="Douglas Sherk" title="Follow me on Twitter @DougSherk" class="img-rounded floatLeft" />			
+<p>Mozilla engineer working on Firefox OS, Gecko, and Gaia.
+ · <a href="https://twitter.com/scigit">@scigit</a> co-founder
+ · webdev and UX on the side
+ · aka "drs"
+ · INTJ
+ · <a href="https://twitter.com/uwaterloo">@uwaterloo</a> alum
+ · <a href="https://twitter.com/uwvelocity">@uwvelocity</a> alum</p>
+<p><a href="https://twitter.com/DougSherk" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @DougSherk</a></p>
+<p>
+	<ul class="buttons unstyled">
+	  <li><a href="http://github.com/DouglasSherk" rel="me" class="social github" title="Go to github.com/DouglasSherk" target="_blank"></a></li>
+	  <li><a href="http://www.linkedin.com/profile/view?id=103633711&trk=tab_pro" rel="me" class="social linkedin" title="Go to LinkedIn profile" target="_blank"></a></li>
+	  <li><a href="http://www.twitter.com/DougSherk" rel="me" class="social twitter" title="Go to twitter.com/DougSherk" target="_blank"></a></li>
+	  <li><a href="https://plus.google.com/114427580703773812134/posts" rel="me" class="social gplus" title="Go to Google Plus profile" target="_blank"></a></li>
+	  <li><a href="mailto:doug(at)sherk(dot)me" rel="me" class="social mail" title="Email Doug" onclick="emailClick(this)"></a></li>				
+	</ul>
+</p>
+
+<h3>Media</h3>
+<ul>
+  <li><strong>2013-10-14</strong> -
+    Javascript Everywhere, "CSS Animations and Transitions, The Graphics Backend"
+    (<a href="http://youtube.com/watch?v=NzmKwHCsQNs&hd=1">Video</a>) 
+    (<a href="https://docs.google.com/a/sherk.me/presentation/d/1NAuzdvGg3zXBxBuK8ru9uCd8WFBc_WecKiN2r1CWAtk">Slides</a>)</li>
+  <li><strong>2013-09-06</strong> -
+    Javascript Everywhere, "AngularJS Walkthrough"
+    (<a href="https://docs.google.com/a/sherk.me/presentation/d/1uSZwavzgUNu1omDJzcgIC_eT52q98YQeGBPmJEQK94A">Slides</a>)</li>
+  <li><strong>2012-08-23</strong> -
+    "Async Panning and Zooming in Mobile Browsers"
+    (<a href="https://air.mozilla.org/async/">Video</a>) 
+    (<a href="https://docs.google.com/a/sherk.me/file/d/0B302m5-Dgg61V1lSSzVlOS00dnc">Slides</a>)</li>
+  <li><strong>2011-12-09</strong> -
+    WebGL Camp #4, "Context Loss: The Forgotten Scripts"
+    (<a href="http://www.youtube.com/watch?v=k4RPt2DSMiw&hd=1&t=7m54s">Video</a>)</li>
+</ul>
+
+<br>
+
+<a class="twitter-timeline" href="https://twitter.com/DougSherk" data-widget-id="413496975787442176">Tweets by @DougSherk</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
